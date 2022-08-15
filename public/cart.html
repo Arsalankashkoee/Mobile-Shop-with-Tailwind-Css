@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shop - Cart page</title>
+    <link rel="stylesheet" href="/mobile-shop/public/build/tailwind.css">
+</head>
+<body class=" bg-gray-100 h-screen">
+    <div class="container xl:max-w-screen-xl">
+
+        <!-- app-Bar -->
+        <section class="flex items-center justify-between mt-12  mb-6 md:hidden">
+            <!-- chevro-Right -->
+            <div class=" w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+            </div>
+            <!-- mobile-Description -->
+            <div class="text-lg font-bold text-slate-800">سبد خرید</div>
+            <!-- search-Icon -->
+            <div class="w-7 h-7  bg-white shadow-lg flex items-center justify-center rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+            </div>
+
+        </section>
+
+        <!-- desktop-navBar -->
+        <nav class="bg-white hidden md:block h-20 rounded-lg shadow-lg  sticky z-10 top-0 mb-7">
+            <div class="flex items-center justify-between px-5 py-3">
+
+                <ul class="flex items-center md:gap-x-1 lg:gap-x-7 text-slate-800 text-lg ">
+                    <li>
+                        <a href="#">Logo</a>
+                    </li>
+                    <li>
+                        <a class=" px-4 py-2 block hover:bg-gray-100 rounded-xl transition-all duration-100" href="#">خانه</a>
+                    </li>
+                    <li>
+                        <a class=" px-4 py-2 block hover:bg-gray-100 rounded-xl transition-all duration-100" href="#">تلفن همراه</a>
+                    </li>
+                    <li>
+                        <a class=" px-4 py-2 block hover:bg-gray-100 rounded-xl transition-all duration-100" href="#">لپ تاب</a>
+                    </li>
+                    <li>
+                        <a class=" px-4 py-2 block hover:bg-gray-100 rounded-xl transition-all duration-100" href="#">گوشی هوشمند</a>
+                    </li>
+                </ul>
+                
+                <!-- searchBar -->
+                <div class="flex-1 max-w-lg">
+                    
+                    <div class="bg-gray-100 flex items-center rounded-lg p-1 ">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                        </span>
+                        <input class="mr-3 h-8 bg-gray-100 outline-none w-full text-slate-800"  type="text" placeholder="search ...">
+                    </div>
+    
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- buy -->
+        <section class="flex items-start gap-x-5">
+            <!-- cart-Items -->
+            <section class="flex flex-col gap-y-5 flex-auto">
+                <!-- 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-2 flex items-stretch justify-between ">
+                    <!-- img -->
+                    <div class="w-20 h-auto bg-gray-100 rounded-lg">
+                        <img class="w-full h-auto" src="/mobile-shop/assets/images/apple-watch-6.png" alt="">
+                    </div>
+                    <!-- title -->
+                    <div class="flex flex-col justify-between flex-1 mr-4">
+                        <span class="text-slate-800 font-semibold text-sm md:text-lg">ساعت هوشمند اپل سری 7</span>
+                        <span class="text-orange-500 font-bold md:text-lg">13,850,000 تومان</span>
+                    </div>
+                    <!-- amount - close -->
+                    <div class="flex flex-col items-end justify-between ml-2">
+                        <!-- close -->
+                        <span class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <!-- pluse-minus -->
+                        <div class="flex items-center gap-x-1">
+                            <span class="flex items-center justify-center bg-gray-200 rounded-full text-slate-800 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span class="px-1 border-2 border-orange-400 flex items-center justify-center rounded text-slate-700 md:text-base">1</span>
+                            <span class="flex items-center justify-center bg-red-200 rounded-full text-slate-800 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-2 flex items-stretch justify-between ">
+                    <!-- img -->
+                    <div class="w-20 h-auto bg-gray-100 rounded-lg">
+                        <img class="w-full h-auto" src="/mobile-shop/assets/images/apple-watch-6.png" alt="">
+                    </div>
+                    <!-- title -->
+                    <div class="flex flex-col justify-between flex-1 mr-4">
+                        <span class="text-slate-800 font-semibold text-sm md:text-lg">ساعت هوشمند اپل سری 7</span>
+                        <span class="text-orange-500 font-bold md:text-lg">13,850,000 تومان</span>
+                    </div>
+                    <!-- amount - close -->
+                    <div class="flex flex-col items-end justify-between ml-2">
+                        <!-- close -->
+                        <span class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <!-- pluse-minus -->
+                        <div class="flex items-center gap-x-1">
+                            <span class="flex items-center justify-center bg-gray-200 rounded-full text-slate-800 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span class="px-1 border-2 border-orange-400 flex items-center justify-center rounded text-slate-700 md:text-base">1</span>
+                            <span class="flex items-center justify-center bg-red-200 rounded-full text-slate-800 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-2 flex items-stretch justify-between ">
+                    <!-- img -->
+                    <div class="w-20 h-auto bg-gray-100 rounded-lg">
+                        <img class="w-full h-auto" src="/mobile-shop/assets/images/apple-watch-6.png" alt="">
+                    </div>
+                    <!-- title -->
+                    <div class="flex flex-col justify-between flex-1 mr-4">
+                        <span class="text-slate-800 font-semibold text-sm md:text-lg">ساعت هوشمند اپل سری 7</span>
+                        <span class="text-orange-500 font-bold md:text-lg">13,850,000 تومان</span>
+                    </div>
+                    <!-- amount - close -->
+                    <div class="flex flex-col items-end justify-between ml-2">
+                        <!-- close -->
+                        <span class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <!-- pluse-minus -->
+                        <div class="flex items-center gap-x-1">
+                            <span class="flex items-center justify-center bg-gray-200 rounded-full text-slate-800 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span class="px-1 border-2 border-orange-400 flex items-center justify-center rounded text-slate-700 md:text-base">1</span>
+                            <span class="flex items-center justify-center bg-red-200 rounded-full text-slate-800 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- total-Price-mobile -->
+                <div class="bg-white rounded-lg shadow-lg p-3 flex flex-col items-stretch gap-y-7 mb-5 md:hidden">
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-800 font-bold text-xl">مجموع قیمت :</span>
+                        <span class="text-orange-500 font-bold text-lg">41,550,000 تومان</span>
+                    </div>
+                    <div class="text-slate-800">کد تخفیف دارید ؟</div>
+                </div>
+
+                <!-- button -->
+                <button class="w-full bg-orange-500 text-white rounded-lg p-4 shadow-md md:hidden mb-24">ادامه فرایند خرید</button>
+            </section>
+
+            <!-- total-Price-laptop -->
+            <section class=" md:flex flex-col items-center gap-y-7 hidden md:flex-auto">
+                <!-- final-Price -->
+                <div class="bg-white rounded-lg hidden md:flex md:flex-col p-4 md:flex-auto shadow-lg">
+                    <div class="flex items-center justify-between mb-11">
+                        <span class="text-slate-800 font-bold text-lg ml-5">مجموع قیمت :</span>
+                        <span class="text-orange-500 font-bold text-lg">41,550,000 تومان</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-12">
+                        <span class="ml-3">کد تخفیف :</span>
+                        <span class="flex items-stretch justify-between overflow-hidden rounded-xl bg-gray-200 ">
+                            <input type="text" dir="ltr" class="border-0 w-full max-w-[150px] bg-transparent py-2 px-4 text-gray-700 focus:outline-none -ml-2 " placeholder="AS_DYC">
+                            <button class="border-0 bg-orange-500 p-3 text-white outline-none ">تایید</button>
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between mb-11">
+                        <span class="text-slate-800 font-bold text-lg">تخفیف :</span>
+                        <span class="text-slate-700 font-bold text-lg">250,000 تومان</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-11">
+                        <span class="text-slate-800 font-bold text-lg">قیمت نهایی :</span>
+                        <span class="text-orange-500 font-bold text-lg">41,300,000 تومان</span>
+                    </div>
+
+                    <!-- button -->
+                    <div class="flex flex-col gap-y-4">
+                        <button class="bg-orange-500 text-white rounded-lg p-4 ">ادامه فرایند خرید</button>
+                        <button class="bg-none text-orange-500 border-2 border-orange-500 rounded-lg p-4 ">انصراف از خرید</button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        
+
+        <!-- Bottom-Navigation -->
+       <section class="md:hidden shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)] fixed bottom-0 left-0 right-0 w-full bg-white rounded-tr-md      rounded-tl-md px-4 py-2 flex items-center border border-t-2">
+            <nav class=" flex items-center justify-between gap-x-2 w-full">
+                <ul x-data="{activeBottomTab :1 , activeTabClass : 'text-slate-700 font-bold' }" class="flex items-center justify-between gap-x-2 w-full">
+                    <!-- 1 -->
+                    <li @click="activeBottomTab = 1" :class="activeBottomTab === 1 ? activeTabClass : '' " class= "flex-auto text-gray-400">
+                        <a href="#" class="flex items-center justify-center py-2 w-full">
+                            <span class="">
+                                <svg width="32" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M26.72 9.094 19.04 3.72c-2.093-1.466-5.307-1.386-7.32.174L5.04 9.107c-1.333 1.04-2.387 3.173-2.387 4.853v9.2c0 3.4 2.76 6.174 6.16 6.174h14.374c3.4 0 6.16-2.76 6.16-6.16v-9.04c0-1.8-1.16-4.014-2.627-5.04ZM17 24c0 .547-.453 1-1 1-.547 0-1-.453-1-1v-4c0-.546.453-1 1-1 .547 0 1 .454 1 1v4Z" /></svg>
+                            </span>
+                            <span x-show="activeBottomTab === 1" class=" text-base mr-2 text-slate-700">خانه</span>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li @click="activeBottomTab = 2" :class="activeBottomTab === 2 ? activeTabClass : '' " class=" flex-auto text-gray-400">
+                        <a href="#" class="flex items-center justify-center py-2 w-full">
+                            <span class="">
+                                <svg width="34" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g  ><path d="M10.257 2.833H7.565c-3.102 0-4.732 1.63-4.732 4.718v2.692c0 3.088 1.63 4.717 4.718 4.717h2.692c3.088 0 4.717-1.629 4.717-4.717V7.55c.014-3.088-1.615-4.718-4.703-4.718ZM26.45 2.833h-2.692c-3.089 0-4.718 1.63-4.718 4.718v2.692c0 3.088 1.63 4.717 4.718 4.717h2.691c3.088 0 4.718-1.629 4.718-4.717V7.55c0-3.088-1.63-4.718-4.718-4.718ZM26.45 19.026h-2.692c-3.089 0-4.718 1.629-4.718 4.717v2.692c0 3.088 1.63 4.718 4.718 4.718h2.691c3.088 0 4.718-1.63 4.718-4.718v-2.692c0-3.088-1.63-4.717-4.718-4.717ZM10.257 19.026H7.565c-3.102 0-4.732 1.629-4.732 4.717v2.692c0 3.103 1.63 4.732 4.718 4.732h2.692c3.088 0 4.717-1.63 4.717-4.718v-2.692c.014-3.102-1.615-4.731-4.703-4.731Z"/></g></svg>
+                            </span>
+                            <span x-show="activeBottomTab === 2" class="text-slate-800 font-bold text-base mr-2">دسته بندی</span>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li @click="activeBottomTab = 3" :class="activeBottomTab === 3 ? activeTabClass : '' " class=" flex-auto text-gray-400">
+                        <a href="#" class="flex items-center justify-center py-2 w-full">
+                            <span class="">
+                                <svg width="34" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M28.277 12.693c-.95-1.048-2.38-1.657-4.364-1.87V9.747a6.9 6.9 0 0 0-2.266-5.114c-1.46-1.332-3.358-1.955-5.327-1.771-3.386.326-6.233 3.598-6.233 7.14v.821c-1.984.213-3.415.822-4.364 1.87-1.374 1.53-1.331 3.57-1.176 4.987l.992 7.89c.298 2.763 1.417 5.597 7.508 5.597h7.905c6.092 0 7.211-2.834 7.509-5.582l.992-7.92c.155-1.402.184-3.442-1.176-4.972ZM16.518 4.831c1.417-.128 2.763.312 3.811 1.26a4.925 4.925 0 0 1 1.615 3.656v.991h-9.888v-.736c0-2.522 2.082-4.944 4.462-5.171Zm-4.59 13.798h-.014a1.42 1.42 0 0 1-1.416-1.416 1.424 1.424 0 0 1 2.848 0 1.42 1.42 0 0 1-1.418 1.416Zm9.917 0h-.014a1.42 1.42 0 0 1-1.417-1.416 1.424 1.424 0 0 1 2.848 0 1.42 1.42 0 0 1-1.417 1.416Z" /></svg>
+                            </span>
+                            <span x-show="activeBottomTab === 3" class="text-slate-800 font-bold text-base mr-2 ">سبد خرید</span>
+                        </a>
+                        
+                    </li>
+                    <!-- 4 -->
+                    <li @click="activeBottomTab = 4" :class="activeBottomTab === 4 ? activeTabClass : '' " class=" flex-auto text-gray-400">
+                        <a href="#" class="flex items-center justify-center py-2 w-full">
+                            <span class="">
+                                <svg width="29" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.834.333a7.702 7.702 0 0 0-6.156 3.09A7.701 7.701 0 0 0 8.522.332C4.278.333.833 3.8.833 8.067c0 1.644.267 3.178.712 4.578 2.177 6.91 8.933 11.066 12.266 12.2.467.155 1.245.155 1.711 0 3.334-1.134 10.09-5.267 12.267-12.2.467-1.423.711-2.934.711-4.578C28.522 3.8 25.078.333 20.834.333Z"/></svg>
+                            </span>
+                            <span x-show="activeBottomTab === 4" class="text-slate-800 font-bold text-base mr-2">علاقه مندی </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
+    
+
+
+
+
+
+    </div>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>

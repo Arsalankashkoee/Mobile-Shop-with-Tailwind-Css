@@ -1,0 +1,4 @@
+@import url("/mobile-shop/src/css/font.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
